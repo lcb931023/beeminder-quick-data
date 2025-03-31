@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Beeminder Quick Data",
+  "version": "1.0",
+  "description": "Quickly enter data points to your Beeminder goals",
+  "applications": {
+    "gecko": {
+      "id": "beeminder-quick-data@changbai.li"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://www.beeminder.com/api/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "Beeminder Quick Data",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

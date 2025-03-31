@@ -1,0 +1,215 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 16px;
+  width: 350px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+  text-align: center;
+  color: #f90;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  color: #f90;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #f90;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #e80;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+#cancel-datapoint {
+  background-color: #999;
+}
+
+#cancel-datapoint:hover {
+  background-color: #777;
+}
+
+.goal-item {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: space-between;
+  border-left-width: 5px;
+}
+
+.goal-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Urgency colors */
+.urgency-green {
+  border-left-color: #5cb85c;
+}
+
+.urgency-blue {
+  border-left-color: #5bc0de;
+}
+
+.urgency-orange {
+  border-left-color: #f0ad4e;
+}
+
+.urgency-red {
+  border-left-color: #d9534f;
+}
+
+.goal-info {
+  flex: 1;
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.goal-name {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.urgency-badge {
+  font-size: 0.8em;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #666;
+  white-space: nowrap;
+}
+
+.urgency-green .urgency-badge {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.urgency-blue .urgency-badge {
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.urgency-orange .urgency-badge {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.urgency-red .urgency-badge {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.today-indicator {
+  margin-left: 8px;
+  font-size: 0.9em;
+  color: #5cb85c;
+  font-weight: bold;
+}
+
+.goal-slug {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.quick-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quick-add {
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  min-width: 40px;
+  text-align: center;
+}
+
+.quick-add:hover {
+  background-color: #45a049;
+}
+
+.custom-add {
+  padding: 6px 8px;
+  background-color: #999;
+  min-width: 20px;
+  font-weight: bold;
+}
+
+.custom-add:hover {
+  background-color: #777;
+}
+
+#status-message {
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+#loading {
+  text-align: center;
+  margin: 16px 0;
+}
+
+#goals-container {
+  max-height: 300px;
+  overflow-y: auto;
+}

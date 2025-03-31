@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Beeminder Quick Data Settings</h1>
+    
+    <form id="options-form">
+      <div class="form-group">
+        <label for="beeminder-username">Beeminder Username</label>
+        <input type="text" id="beeminder-username" placeholder="your-username">
+      </div>
+      
+      <div class="form-group">
+        <label for="beeminder-auth-token">Beeminder Auth Token</label>
+        <input type="password" id="beeminder-auth-token" placeholder="auth token">
+        <p class="help-text">Find your auth token in your <a href="https://www.beeminder.com/settings/account" target="_blank">Beeminder account settings</a> under "API Key".</p>
+      </div>
+      
+      <div class="buttons">
+        <button type="submit" id="save-btn">Save</button>
+      </div>
+    </form>
+    
+    <div class="section-divider"></div>
+    
+    <h2>Quick Add Default Values</h2>
+    <p class="help-text">Set the default values for one-click data entry for each goal.</p>
+    
+    <div id="goal-defaults-container">
+      <div class="loading">Loading your goals...</div>
+    </div>
+    
+    <div id="status-message"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

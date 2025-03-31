@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Beeminder Quick Data</h1>
+    
+    <div id="login-view">
+      <p>Please configure your Beeminder credentials in the extension options.</p>
+      <button id="open-options">Open Options</button>
+    </div>
+    
+    <div id="goals-view" style="display: none;">
+      <div id="loading">Loading your goals...</div>
+      <div id="goals-container"></div>
+      
+      <div id="datapoint-form" style="display: none;">
+        <h2 id="selected-goal-name"></h2>
+        <div class="form-group">
+          <label for="value">Value:</label>
+          <input type="number" id="value" step="0.01">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <input type="text" id="comment">
+        </div>
+        <div class="buttons">
+          <button id="submit-datapoint">Submit</button>
+          <button id="cancel-datapoint">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="status-message"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
