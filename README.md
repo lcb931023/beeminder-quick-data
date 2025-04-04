@@ -7,7 +7,6 @@ Firefox extension for one-click Beeminder data entry directly from your browser.
 - One-click data entry with customizable default values
 - Goals sorted by urgency with color-coded indicators
 - Checkmarks for goals that have met daily rate
-- Auto-includes current tab title in comments
 
 ## Setup
 
@@ -21,7 +20,6 @@ Firefox extension for one-click Beeminder data entry directly from your browser.
 
 1. Click the extension icon
 2. Click "+X" next to any goal to instantly log data
-3. The current tab's title will be included in the comment
 
 ## Structure
 
