@@ -229,9 +229,6 @@ function renderGoals(goals, goalsTodayData) {
           
           // Create comment with tab information
           let comment = `Quick add via extension`;
-          if (currentTab && currentTab.title) {
-            comment += ` [Tab: ${currentTab.title}]`;
-          }
           
           submitDatapoint(goal.slug, value, comment);
         });
@@ -255,14 +252,7 @@ function showDatapointForm(goal) {
   goalsContainer.style.display = 'none';
   datapointForm.style.display = 'block';
   valueInput.value = '';
-  
-  // Pre-fill comment with tab information if available
-  let comment = '';
-  if (currentTab && currentTab.title) {
-    comment = `[Tab: ${currentTab.title}]`;
-  }
-  commentInput.value = comment;
-  
+  commentInput.value = '';
   valueInput.focus();
 }
 
