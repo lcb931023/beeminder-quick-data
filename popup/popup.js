@@ -227,9 +227,9 @@ function renderGoals(goals, goalsTodayData) {
           e.stopPropagation(); // Prevent the goalElement click from firing
           const value = quickAddBtn.getAttribute('data-value');
           
-          // Create comment with tab information
+          // Create comment with tab information only for read-paper goal
           let comment = `Quick add via extension`;
-          if (currentTab && currentTab.title) {
+          if (goal.slug === 'read-paper' && currentTab && currentTab.title) {
             comment += ` [Tab: ${currentTab.title}]`;
           }
           
@@ -256,9 +256,9 @@ function showDatapointForm(goal) {
   datapointForm.style.display = 'block';
   valueInput.value = '';
   
-  // Pre-fill comment with tab information if available
+  // Pre-fill comment with tab information only for read-paper goal
   let comment = '';
-  if (currentTab && currentTab.title) {
+  if (goal.slug === 'read-paper' && currentTab && currentTab.title) {
     comment = `[Tab: ${currentTab.title}]`;
   }
   commentInput.value = comment;
